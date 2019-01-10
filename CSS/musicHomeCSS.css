@@ -1,0 +1,120 @@
+body{
+	background-color: black;
+	font-family: 'French Script MT', 'Brush Script MT', Arial; 
+	color: white;
+	padding: 0px;
+	z-index: 1;
+	}
+/*general button stuff */	
+button{
+	display: inline-block;
+	height: 15vh;
+	width: 16vw;
+	font-family: inherit;
+	font-size: 3vw;
+	font-weight: bold;
+	border: none;
+	display: inline-block;
+	animation-name: example;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+	-webkit-animation-name: example;
+	-webkit-animation-duration: 30s;
+	-webkit-animation-iteration-count: infinte;
+	border-radius: 20%;
+	-webkit-border-radius: 20%;
+	position:sticky;
+	}
+
+/*creation of the animations used in the website. The colour changing buttons then the twizzling on hovering over the buttons */
+@keyframes example {
+	0% 	{background-color: red;}
+	15%	{background-color: orange;}
+	30% {background-color: yellow;}
+	45% {background-color: green;}
+	60% {background-color: blue;}
+	75% {background-color: purple;}
+	90% {background-color: pink;}
+	100% {background-color: red;}
+}
+
+@-webkit-keyframes example{	0% 	{background-color: red;}
+	15%	{background-color: orange;}
+	30% {background-color: yellow;}
+	45% {background-color: green;}
+	60% {background-color: blue;}
+	75% {background-color: purple;}
+	90% {background-color: pink;}
+	100% {background-color: red;}}
+
+
+#PentacleImage{
+	height: 14vh;
+	width: 14vh;
+}
+
+#OptionsButton{
+	right: 0vw;
+	top: 5vh;
+}
+
+#UpdatesButton{
+	right: 90vw;
+	top: 51vh;
+}
+
+#HomeButton{
+	right: 90vw;
+	top: 28vh;
+}
+
+#LinksButton{
+	right: 90vw;
+	top: 73vh;
+}
+
+.sideNav{
+	  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 17vw; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+.sideNav button{
+	  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #FFFFFF;
+  display: block;
+}
+
+.topBar{
+  overflow: hidden;
+  background-color: #111;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  left:17vw;
+  width: 100%; /* Full width */
+  height: 27vh;
+  z-index:3;
+}
+
+h1{
+	color: #FFFFFF;
+	font-size: 15vh;
+}
+
+.gridContainer{
+	  display: grid;
+	  position: relative;
+	grid-template-columns: auto auto auto;
+	width: 82vw;
+	top: 27vh;
+	float: right;
+	text-align: center;
+}

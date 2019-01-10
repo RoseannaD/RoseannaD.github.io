@@ -1,0 +1,140 @@
+/* CSS */
+body{
+	background-color: black;
+	font-family: 'French Script MT', 'Brush Script MT', Arial; 
+	color: white;
+	padding: 0px;
+	z-index: 1;
+	}
+/*general button stuff */	
+button{
+	display: inline-block;
+	height: 15vh;
+	width: 16vw;
+	font-family: inherit;
+	font-size: 3vw;
+	font-weight: bold;
+	border: none;
+	display: inline-block;
+	animation-name: example;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+	-webkit-animation-name: example;
+	-webkit-animation-duration: 30s;
+	-webkit-animation-iteration-count: infinte;
+	border-radius: 20%;
+	-webkit-border-radius: 20%;
+	position:sticky;
+	}
+
+a {
+	text-decoration:none;	
+}
+
+/*creation of the animations used in the website. The colour changing buttons then the twizzling on hovering over the buttons */
+@keyframes example {
+	0% 	{background-color: red;}
+	15%	{background-color: orange;}
+	30% {background-color: yellow;}
+	45% {background-color: green;}
+	60% {background-color: blue;}
+	75% {background-color: purple;}
+	90% {background-color: pink;}
+	100% {background-color: red;}
+}
+
+@-webkit-keyframes example{	0% 	{background-color: red;}
+	15%	{background-color: orange;}
+	30% {background-color: yellow;}
+	45% {background-color: green;}
+	60% {background-color: blue;}
+	75% {background-color: purple;}
+	90% {background-color: pink;}
+	100% {background-color: red;}}
+
+#PentacleImage{
+	height: 14vh;
+	width: 14vh;
+}
+
+#OptionsButton{
+	right: 0vw;
+	top: 5vh;
+}
+
+#UpdatesButton{
+	right: 90vw;
+	top: 41vh;
+}
+
+#HomeButton{
+	right: 90vw;
+	top: 23vh;
+}
+
+#LinksButton{
+	right: 90vw;
+	top: 78vh;
+}
+
+#MusicButton{
+	top:60vh;
+}
+.sideNav{
+  height: 100%;
+  width: 17vw;
+  position: fixed;
+  z-index: 1; 
+  top: 0; 
+  left: 0;
+  background-color: #111; 
+  overflow-x: hidden; 
+  padding-top: 20px;
+}
+
+.sideNav button{
+	  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #FFFFFF;
+  display: block;
+}
+
+.topBar{
+  overflow: hidden;
+  background-color: #111;
+  position: fixed;
+  top: 0;
+  left:17vw;
+  width: 100%;
+  height: 27vh;
+  z-index:3;
+}
+
+h1{
+	color: #FFFFFF;
+	font-size: 15vh;
+}
+
+h2{
+	font-size:10vh;
+}
+
+p{
+	text-align: center;
+}
+
+.main{
+	display: block;
+	left:30vw;
+	position: absolute;
+	top: 25vh;
+	width: 70vw;
+}
+
+.lyrics{
+	position: absolute;
+	right: 13vw;
+	top: 80vh;
+	width: 70vw;
+}

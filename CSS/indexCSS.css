@@ -1,0 +1,109 @@
+body{
+	background-color: black;
+	font-family: 'French Script MT', 'Brush Script MT', Arial; 
+	padding: 0px;
+	}
+/*general button stuff */	
+button{
+	display: inline-block;
+	height: 15vh;
+	width: 16vw;
+	font-family: inherit;
+	font-size: 3vw;
+	font-weight: bold;
+	border: none;
+	display: inline-block;
+	position: relative;
+	animation-name: example;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+	-webkit-animation-name: example;
+	-webkit-animation-duration: 30s;
+	-webkit-animation-iteration-count: infinte;
+	border-radius: 20%;
+	-webkit-border-radius: 20%;
+	}
+/*creation of the animations used in the website. The colour changing buttons then the twizzling on hovering over the buttons */
+@keyframes example {
+	0% 	{background-color: red;}
+	15%	{background-color: orange;}
+	30% {background-color: yellow;}
+	45% {background-color: green;}
+	60% {background-color: blue;}
+	75% {background-color: purple;}
+	90% {background-color: pink;}
+	100% {background-color: red;}
+}
+
+@-webkit-keyframes example{	0% 	{background-color: red;}
+	15%	{background-color: orange;}
+	30% {background-color: yellow;}
+	45% {background-color: green;}
+	60% {background-color: blue;}
+	75% {background-color: purple;}
+	90% {background-color: pink;}
+	100% {background-color: red;}}
+
+
+button:hover{
+	transform: rotate(360deg);
+	transition-duration: 3s;
+}
+/*stuff to do with the individual buttons such as positioning */
+input{
+	display: inline-block;
+	height: 15vh;
+	width: 16vw;
+	font-family: inherit;
+	font-size: 3vw;
+	font-weight: bold;
+	border: none;
+	display: inline-block;
+	position: relative;
+	animation-name: example;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+	-webkit-animation-name: example;
+	-webkit-animation-duration: 30s;
+	-webkit-animation-iteration-count: infinte;
+	border-radius: 20%;
+	-webkit-border-radius: 20%;
+}
+
+	
+#FlipButton{
+	height: 40vh;
+	width: 70vw;
+	top: 15vh;
+	margin-top: 1vh;
+	left: 15vw;
+}
+
+#OptionsButton{
+	height: 16vh;
+	width: 16vw;
+	top: 53vh;
+	left: 8vw;
+
+}
+	
+#PentacleImage{
+	height: 7vw;
+	width: 7vw;
+}
+
+#MusicButton{
+	left: 62vw;
+	top: 8vh;
+}
+
+#UpdatesButton{
+	top: 8vh;
+	left: 4vw;
+}
+
+#LinksButton{
+	top:78vh;
+	left: 10vw;
+}
+
